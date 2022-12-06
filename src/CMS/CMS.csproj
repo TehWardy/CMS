@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="6.1.0" />
+	<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+	<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+	<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.Api\CMS.Api.csproj" />
+    <ProjectReference Include="..\CMS.Data.EF.MSSQL\CMS.Data.EF.MSSQL.csproj" />
+    <ProjectReference Include="..\CMS.Data.EF.SQLite\CMS.Data.EF.SQLite.csproj" />
+	<ProjectReference Include="..\CMS.Services\CMS.Services.csproj" />
+    <ProjectReference Include="..\CMS.Data\CMS.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>

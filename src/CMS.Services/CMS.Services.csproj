@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Foundation\" />
+    <Folder Include="Orchestration\" />
+    <Folder Include="Processing\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.Data\CMS.Data.csproj" />
+    <ProjectReference Include="..\CMS.Objects\CMS.Objects.csproj" />
+  </ItemGroup>
+
+</Project>
